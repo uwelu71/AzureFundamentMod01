@@ -1,5 +1,5 @@
 #!/bin/bash
-az connect
+# az login
 
 # Create a resource group.
 az group create --name ulu-demo01-t-we-rg --location westeurope
