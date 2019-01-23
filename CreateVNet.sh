@@ -16,17 +16,17 @@ az network nsg create --resource-group ulu-demo01-t-we-rg --name uludem01-winapp
 # Create a subnet
 
 az network vnet subnet create \
-  --resource-group uludem01-t-we-rg \
+  --resource-group ulu-demo01-t-we-rg \
   --vnet-name uludm01-vnet \
   --name uludm01-vnet-sub01 \
-  --address-prefix 10.1.0.0/24 \
+  --address-prefix 10.0.1.0/24 \
   --network-security-group uludem01-lxapp-nsg
 
 az network vnet subnet create \
-  --resource-group uludem01-t-we-rg \
+  --resource-group ulu-demo01-t-we-rg \
   --vnet-name uludm01-vnet \
   --name uludm01-vnet-sub02 \
-  --address-prefix 10.2.0.0/24 \
+  --address-prefix 10.0.2.0/24 \
   --network-security-group uludem01-winapp-nsg
 
 
